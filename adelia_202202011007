@@ -1,0 +1,80 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main(){
+int tanggal,bulan;
+
+printf ("=======================================================\n");
+printf ("||||||||||||||||||||||||ZODIAK|||||||||||||||||||||||||\n");
+printf ("=======================================================\n");
+printf ("|||||||||||||||||||Adelia Mutiara Putri||||||||||||||||\n");
+printf ("=======================================================\n");
+printf ("\nMasukkan Tanggal lahir : ");
+scanf ("%d",&tanggal);
+ if(tanggal>31 || tanggal<1){
+    printf("Maaf tidak dapat memunculkan zodiak\n");
+    printf("tanggal tanggal yang anda masukkan tidak valid\nsilahkan masukkan tanggal kembali\n");
+  }else{
+    printf ("Masukkan Angka Bulan lahir: ");
+    scanf ("%d",&bulan);
+      if(bulan>=12 || bulan<1){
+        printf("Maaf tidak dapat memunculkan zodiak\n");
+        printf("Maaf bulan yang anda masukkan tidak valid\nsilahkan masukkan tanggal kembali\n");
+       }else{
+        printf ("Zodiak dari Tanggal dan Bulan tersebut adalah: ");
+        
+if (tanggal>=20&&bulan==1||tanggal<=18&&bulan==2) {
+    printf ("Aquarius \n");
+    
+}
+else if (tanggal<=29&&bulan==2||tanggal<=20&&bulan==3){
+    printf ("Pisces \n");
+   
+}
+else if (tanggal<=31&&bulan==3||tanggal<=19&&bulan==4){
+    printf ("Aries \n");
+    
+}
+else if (tanggal<=30&&bulan==4||tanggal<=20&&bulan==5){
+    printf ("Taurus \n");
+    
+}
+else if (tanggal<=31&&bulan==5||tanggal<=21&&bulan==6){
+    printf ("Gemini \n");
+    
+}
+else if (tanggal<=30&&bulan==6||tanggal<=22&&bulan==7){
+    printf ("Cancer \n");
+    
+}
+else if (tanggal<=31&&bulan==7||tanggal<=22&&bulan==8){
+    printf ("Leo \n");
+    
+}
+else if (tanggal<=31&&bulan==8||tanggal<=22&&bulan==9){
+    printf ("Virgo \n");
+    
+}
+else if (tanggal<=30&&bulan==9||tanggal<=23&&bulan==10){
+    printf ("Libra \n");
+    
+}
+else if (tanggal<=31&&bulan==10||tanggal<=21&&bulan==11){
+    printf ("Scorpio \n");
+    
+}
+else if (tanggal<=30&&bulan==11||tanggal<=21&&bulan==12){
+    printf ("Sagitarius \n");
+    
+}
+else if (tanggal<=31&&bulan==12||tanggal<20&&bulan==1){
+    printf ("Capricorn \n");
+    
+}
+printf ("\n=======================================================\n");
+printf ("===================TERIMA KASIH========================\n");
+printf ("=======================================================\n");
+printf ("\n\n Jangan Terlalu Percaya Sama Zodiak Ya Rekan Rekan, Tidak Baik \n");
+       }
+   }
+}
